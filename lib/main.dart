@@ -1,6 +1,7 @@
 // MaterialApp | Scaffold | Text | Center | Image | RichText
 
 import 'package:flutter/material.dart';
+import 'package:flutter_beginner/class3.dart';
 
 void main(){
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
    return MaterialApp(
        title: 'Hello world',
-       home: Home()
+       home: Three()
    );
   }
 
@@ -50,6 +51,19 @@ class Home extends StatelessWidget{
           color: Colors.green,
         ),
          */
+        
+        
+      //   Image Online
+        
+        // child: Image.network('https://hasibcv.onrender.com/image/hasib.jpg'),
+
+        // Offline Images
+        /*
+        child: Image.asset('images/img.png', width: 300, height: 300, fit: BoxFit.scaleDown,),
+         */
+      //   3rd class Scaffold | Column | Row | Dialog | Bottom sheet
+
+
 
 
       ),
