@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget{
    return MaterialApp(
        title: 'Hello world',
        debugShowCheckedModeBanner: false,
-       home: Box4()
+       home: Home()
    );
   }
 
@@ -26,13 +26,33 @@ class MyApp extends StatelessWidget{
 
 
 class Home extends StatelessWidget{
-  const Home({super.key});
+  List<String> studentList = [
+    'Hasib','Abdullah','Najib','Raihan'
+  ];
+
+  Home({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
-      body: Center(
+      body: ListView.builder(
+        itemCount: studentList.length,
+          itemBuilder: (context, index){
+            return Text(studentList[index]);
+          }
+      )
+      /*
+      ListView.builder(
+        itemCount: 100,
+          itemBuilder: (context, index){
+            return Text('$index');
+          }
+      ),
+
+       */
+        /*
         // Text
         /*
         child: Text('Hello Flutter, We are starting a new application from today. I am flutter app developer now new goal in my life',
@@ -69,7 +89,9 @@ class Home extends StatelessWidget{
 
 
 
-      ),
+         */
+
+
     );
   }
 
