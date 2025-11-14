@@ -29,7 +29,10 @@ class Three extends StatelessWidget{
             */
             
             showDialog(context: context, builder: (context){
-              return Text('Hello world');
+              return AlertDialog(
+                title: Text('Send Money'),
+                content: Text('Are you sure that you want to send money'),
+              );
             });
           }, icon: Icon(Icons.add)
           )

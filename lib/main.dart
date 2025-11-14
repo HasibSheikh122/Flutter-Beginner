@@ -1,6 +1,8 @@
 // MaterialApp | Scaffold | Text | Center | Image | RichText
 
 import 'package:flutter/material.dart';
+import 'package:flutter_beginner/Container.dart';
+import 'package:flutter_beginner/button.dart';
 import 'package:flutter_beginner/class3.dart';
 
 void main(){
@@ -15,7 +17,8 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
    return MaterialApp(
        title: 'Hello world',
-       home: Three()
+       debugShowCheckedModeBanner: false,
+       home: Box4()
    );
   }
 
